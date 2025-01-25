@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal File Downloader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Universal File Downloader</h1>
+
+        <!-- Select File Type Dropdown -->
+        <div>
+            <label for="fileType">Select File Type:</label>
+            <select id="fileType">
+                <option value="youtube">Media (YouTube, etc.)</option>
+            </select>
+        </div>
+
+        <!-- URL Input -->
+        <div>
+            <label for="url">Enter URL:</label>
+            <input type="text" id="url" placeholder="https://www.youtube.com/watch?v=example">
+        </div>
+
+        <!-- Fetch Formats Button -->
+        <div>
+            <button id="fetch-formats">Fetch Formats</button>
+        </div>
+
+        <!-- Formats Dropdown -->
+        <div>
+            <label for="formats">Select Format (Media Only):</label>
+            <select id="formats">
+                <option value="">N/A</option>
+            </select>
+        </div>
+
+        <!-- Download Button -->
+        <div>
+            <button id="download-file">Download File</button>
+        </div>
+
+        <!-- Progress -->
+        <div>
+            <label for="progress">Progress:</label>
+            <progress id="progress" value="0" max="100"></progress>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
